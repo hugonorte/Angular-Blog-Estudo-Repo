@@ -1,0 +1,9 @@
+
+<app-hero />
+<div class="cards__container">
+    @for (post of posts; track post.id) {
+    <app-post-small [postData]="post" />
+    } @empty {
+    <p>Nenhum post encontrado.</p>
+    }
+</div>

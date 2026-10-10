@@ -1,0 +1,29 @@
+.hero {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 5rem;
+    height: 40vh;
+    background-color: #545454;
+    background-image: url('/assets/img/hero/cookie.avif');
+    background-size: cover;
+    background-position: center;
+}
+
+.title {
+    font-family: 'Staatliches', sans-serif;
+    font-size: clamp(2em, -0.6rem + 8vw, 9em);
+    font-weight: normal;
+    color: #FFF;
+}
+
+.subtitle {
+    font-size: clamp(2em, -0.6rem + 8vw, 9em);
+    color: bisque;
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background: #545454;
+}

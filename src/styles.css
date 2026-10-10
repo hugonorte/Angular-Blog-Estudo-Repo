@@ -1,1 +1,36 @@
+/* Typography */
+/*Titulos*/
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+/*subitulos*/
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+/*Logo*/
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=League+Gothic&display=swap');
+/*Texto*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Boldonse&family=League+Gothic&display=swap');
+
 /* You can add global styles to this file, and also import other style files */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100vh;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}

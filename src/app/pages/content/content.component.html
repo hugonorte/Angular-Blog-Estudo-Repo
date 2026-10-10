@@ -1,0 +1,61 @@
+<div class="recipe-book__container" *ngIf="post; else notFound">
+  <nav class="recipe-book__nav">
+    <a routerLink="/" class="back-link">
+      <span class="arrow">&larr;</span> Voltar para o início
+    </a>
+    <span class="category-badge">{{ post.category }}</span>
+  </nav>
+
+  <article class="recipe-card">
+    <header class="recipe-card__header">
+      <h1 class="recipe-title">{{ post.title }}</h1>
+      <div class="recipe-divider">
+        <span class="divider-icon">&#10022;</span>
+      </div>
+    </header>
+
+    <div class="recipe-hero-image">
+      <img [src]="post.imagePath" [alt]="post.title" />
+    </div>
+
+    <div class="recipe-card__body">
+      <!-- Seção de Ingredientes -->
+      <section class="recipe-section ingredients-section">
+        <h2 class="section-title">
+          <span class="section-icon">&#128392;</span> Ingredientes
+        </h2>
+        <ul class="ingredients-list">
+          <li *ngFor="let ingredient of post.ingredients">
+            <span class="bullet">&#10003;</span>
+            <span class="text">{{ ingredient }}</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Divisória interna -->
+      <div class="inner-divider"></div>
+
+      <!-- Seção de Modo de Preparo -->
+      <section class="recipe-section preparation-section">
+        <h2 class="section-title">
+          <span class="section-icon">&#9749;</span> Modo de Preparo
+        </h2>
+        <div class="preparation-content">
+          <p class="preparation-text">{{ post.preparationMode }}</p>
+        </div>
+      </section>
+    </div>
+
+    <footer class="recipe-card__footer">
+      <p class="footer-note">Bom apetite! Feito com carinho no seu livro de receitas.</p>
+    </footer>
+  </article>
+</div>
+
+<ng-template #notFound>
+  <div class="not-found-container">
+    <h2>Receita não encontrada</h2>
+    <p>A receita que você procura não está em nosso acervo.</p>
+    <a routerLink="/" class="back-link">Voltar para o início</a>
+  </div>
+</ng-template>

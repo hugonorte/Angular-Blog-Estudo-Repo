@@ -1,0 +1,27 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2rem;
+    color: bisque;
+}
+
+nav a {
+    color: bisque;
+}
+
+.nav-menu {
+    background: #545454;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2rem;
+    color: bisque;
+}
+
+.logo {
+    font-family: "Boldonse", system-ui;
+    font-size: 2em;
+}

@@ -1,0 +1,73 @@
+.small-card__container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    padding: 25px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.small-card__container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .small-card__container {
+        flex-flow: wrap;
+        width: 95%;
+    }
+
+    .small-card__container img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .small-card__container {
+        max-width: 450px;
+    }
+
+    .small-card__container img {
+        width: 250px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .small-card__container {
+        max-width: 350px;
+    }
+
+    .small-card__container img {
+        width: 350px;
+    }
+}
+
+.small-card__container h3 {
+    font-size: 1rem;
+    font-family: 'Staatliches';
+    text-align: center;
+    font-weight: 400;
+    color: #383838;
+}
+
+.small-card__container img {
+    max-width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.small-card__container h2 {
+    font-family: 'League Gothic';
+    font-size: 2.3rem;
+    font-weight: 500;
+    padding-top: 15px;
+}

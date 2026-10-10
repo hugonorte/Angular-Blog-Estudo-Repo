@@ -1,0 +1,5 @@
+<a [routerLink]="['/content', postData.id]" class="small-card__container">
+    <h3>{{ postData.category }}</h3>
+    <h2>{{ postData.title }}</h2>
+    <img [src]="postData.imagePath" alt="{{ postData.title }}">
+</a>
